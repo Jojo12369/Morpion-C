@@ -31,7 +31,7 @@ void morpion() {
             scanf("%d", &choix);
         }
         cases[choix - 1] = symboles[joueur];
-        tour++; 
+        tour++;
         for (int i = 0; i < 3; i++) {
             if (cases[i * 3] == symboles[joueur] && cases[i * 3 + 1] == symboles[joueur] && cases[i * 3 + 2] == symboles[joueur]) {
                 victoire(cases, joueur);
@@ -60,6 +60,5 @@ void morpion() {
 
 int main(int argc, const char * argv[]) {
     morpion();
-
     return 0;
 }
